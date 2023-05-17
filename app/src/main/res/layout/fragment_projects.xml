@@ -5,67 +5,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".ProjectsFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <!-- First row images -->
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/picone"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        tools:context="com.demotxt.droidsrce.homedashboard.Home"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#fcfcfc"
+        android:gravity="center"
+        android:id="@+id/ll">
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/pictwo"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView1"
-        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+            <com.comix.rounded.RoundedCornerImageView
+                android:src="@drawable/picseven"
+                android:clickable="true"
+                app:cornerRadius="5dp"
+                app:cornerBottomDisable="true"
+                app:cornerRightDisable="true"
+                android:scaleType="fitXY"
+                android:rotation="360"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_margin="1dp">
+            </com.comix.rounded.RoundedCornerImageView>
 
-    <!-- Second row images -->
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/picthree"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1"
-        app:layout_constraintBottom_toBottomOf="parent" />
+                    <com.comix.rounded.RoundedCornerImageView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/picsix"
+                        app:cornerRadius="5dp"
+                        app:cornerBottomDisable="true"
+                        app:cornerLeftDisable="true"
+                        android:rotation="360"
+                        android:scaleType="fitXY"
+                        android:layout_margin="1dp"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/picfour"
-        app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        <!-- This is the second row-->
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:src="@drawable/piceight"
+                android:rotation="360"
+                android:scaleType="fitXY"
+                android:layout_margin="1dp"></ImageView>
 
-    <!-- Large bottom image -->
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:src="@drawable/picfive"
-        app:layout_constraintDimensionRatio="4:3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:src="@drawable/picten"
+                android:scaleType="fitXY"
+                android:layout_margin="1dp"></ImageView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <com.comix.rounded.RoundedCornerImageView
+              android:layout_width="322dp"
+              android:layout_height="170dp"
+              android:scaleType="fitXY"
+              android:rotation="360"
+              app:cornerRadius="5dp"
+              app:cornerTopDisable="true"
+              android:src="@drawable/picnine"></com.comix.rounded.RoundedCornerImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.core.widget.NestedScrollView>

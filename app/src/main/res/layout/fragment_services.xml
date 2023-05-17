@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".servicesFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/contractor"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Services fragment" />
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:drawablePadding="20dp"
+            android:letterSpacing="0.04"
+            android:paddingLeft="20dp"
+            android:text="General Contractor"
+            android:textColor="#305F72"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/newHomeBuild"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/contractor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="20dp"
+            android:letterSpacing="0.04"
+            android:paddingLeft="20dp"
+            android:text="New Home Build"
+            android:textColor="#305F72"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/houseConstruction_id"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/contractor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:letterSpacing="0.04"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="House Construction Technology"
+            android:textColor="#305F72"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/houseConstruction_id"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableLeft="@drawable/ic_baseline_settings_24"
+            android:drawablePadding="5dp"
+            android:layout_width="160dp"
+            android:background="@drawable/border"
+            android:text="Brick House"
+            android:textSize="24dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp">
+        </TextView>
+
+        <TextView
+            android:drawableLeft="@drawable/ic_baseline_settings_24"
+            android:background="@drawable/border"
+            android:drawablePadding="5dp"
+            android:text="Log House"
+            android:textSize="24dp"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp" />
+    </LinearLayout>
+
+</RelativeLayout>

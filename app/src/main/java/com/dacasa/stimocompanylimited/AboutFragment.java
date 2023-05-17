@@ -2,11 +2,18 @@ package com.dacasa.stimocompanylimited;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +21,27 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class AboutFragment extends Fragment {
+
+    RecyclerView RcCv;
+    CVAdapter adapter;
+    List<CvItem> items;
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        RcCv = view.findViewById(R.id.recyclerview_cv);
+        /// create a list of cv items
+        items = new ArrayList<>();
+        items.add(new CvItem("20 April 2014",getString(R.string.KITI_Church)));
+        items.add(new CvItem("20 May 2015",getString(R.string.June_2012)));
+        items.add(new CvItem("25 September 2016",getString(R.string.app_name)));
+        items.add(new CvItem("20 April 2014",getString(R.string.app_name)));
+
+        adapter = new CVAdapter(items);
+        RcCv.setLayoutManager(new LinearLayoutManager(getContext()));
+        RcCv.setAdapter(adapter);
+
+    }
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

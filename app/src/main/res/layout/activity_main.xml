@@ -20,13 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
-            android:paddingTop="30dp"
+            android:paddingTop="10dp"
             android:paddingRight="30dp">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/ic_baseline_home_24" />
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/home_icon" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -52,12 +53,12 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="170dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-black"
-                android:text="STIMO Construction\nCompany"
+                android:text="Construction\nServices STIMO Company"
                 android:textColor="@color/black"
-                android:textSize="43dp"
+                android:textSize="38dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -88,9 +89,9 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/i1"
-                android:text="Steve Mogaka"
+                android:text="Stephen Mogaka"
                 android:textColor="#305F72"
-                android:textSize="25dp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -129,11 +130,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/border"
-
             android:gravity="center_vertical">
 
             <TextView
@@ -151,6 +151,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/hooarrow_id"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_alignParentRight="true"
@@ -174,11 +175,11 @@
             android:id="@+id/viewpager_id"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="380dp">
         </androidx.viewpager.widget.ViewPager>
 
-    </LinearLayout>
+     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>

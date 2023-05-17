@@ -2,4 +2,38 @@
     <string name="app_name">Stimo Company Limited</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="KITI_Church">Construction Foreman
+Lay building materials , including concrete and blocks according  to blue prints, plans or drawings.
+Maintenance of site safety
+Inspection of work done
+Keeping and updating site records
+Estimate masonry jobs.
+Work tasks are completed to the satisfaction of the building supervisor and the department manager.
+PM’s are undertaken at the required frequency and prioritized accordingly.
+Maintenance services provided are customer-focused and timely.
+    </string>
+    <string name="June_2012">Construction Foreman
+Lay building materials , including concrete and blocks according  to blue prints, plans or drawings.
+Fabricates,alters,repair and maintains walls,sidewalks,street curbs,floors, bathroom showers,sink counters,partitions,manholes and other structures or surfaces.
+Determines work requirements and sequence  of masonry/ tiles assignments through review of work orders, plans or drawings.
+Lay out work using chalk lines,plumb bobs, tape , square and levels
+Mixes cement using hoes,cement mixing equipmentsand  or hand tools.
+Molds expansion joint and edges using edging tools, jointers and straightedge.
+Estimate material and Labour costing.</string>
+    <string name="Proffessional_summary">Highly skilled mason with over 15 years’
+        experience working on residential, commercial, and infrastructure construction projects. Expertise in planning,  construction projects,
+        defining scope of work, and managing material and labor costs. Accomplished in contributing to the development of safety initiatives to improve occupational safety goals and to mitigate safety hazards. 
+ </string>
+
+    <string name="Key_Skills">Capability to correctly understand and work according to the blueprints
+Good knowledge of construction tools and hand tools
+Have good experience in building setting and construction
+Experienced in constructing, repairing, renovations, and installing and roofing structures
+Ability to start and finish the project on-time
+Exceptional ability to do work per requirements and Standards
+Excellent in English language, both written and verbal communication</string>
+
+
 </resources>
